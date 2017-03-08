@@ -25,3 +25,6 @@ sbt-wrapper
 /project/project
 /project/plugins
 /target
+
+# Intellij files
+/.idea
