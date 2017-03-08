@@ -1,0 +1,27 @@
+# Binary files
+*.class
+
+# Application tarball
+square.tar.gz
+
+# Launcher Wrapper
+sbt-wrapper
+
+# Log files
+/logs
+*.log
+
+# Ensime Configuration
+.ensime
+.ensime_lucene/
+.ensime_cache/
+
+# Mac OS X files
+*.DS_Store
+
+# sbt specific
+.cache/
+/project/target
+/project/project
+/project/plugins
+/target
