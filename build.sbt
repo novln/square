@@ -10,7 +10,8 @@ scalacOptions ++= Seq(
   "-feature",
   "-unchecked",
   "-deprecation",
-  "-encoding", "UTF-8",
+  "-encoding",
+  "UTF-8",
   "-Ywarn-value-discard",
   "-Ywarn-dead-code",
   "-Ywarn-unused-import",
@@ -22,32 +23,6 @@ scalacOptions ++= Seq(
 
 javaOptions += "-Duser.timezone=UTC"
 
-// Database dependencies
-// libraryDependencies ++= Seq(
-//   "com.typesafe.play" %% "anorm" % "2.5.2",
-//   "org.postgresql" % "postgresql" % "9.4.1212",
-//   "org.flywaydb" %% "flyway-play" % "3.0.1"
-// )
-
-// HTTP dependencies
-libraryDependencies ++= Seq(
-  "com.typesafe.akka" %% "akka-http" % "10.0.4",
-  "com.typesafe.akka" %% "akka-http-spray-json" % "10.0.4"
-)
-
-// Hystrix dependencies
-// libraryDependencies ++= Seq(
-//   "com.netflix.hystrix" % "hystrix-core" % "1.5.8"
-// )
-//
-// // Testing dependencies
-// libraryDependencies ++= Seq(
-//   "org.scalatest" %% "scalatest" % "2.2.6" % "test",
-//   "org.scalatestplus" %% "play" % "1.4.0" % "test",
-//   "org.mockito" % "mockito-core" % "1.10.19" % "test"
-// )
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                       //
 //                               WartRemover configuration                               //
@@ -55,8 +30,15 @@ libraryDependencies ++= Seq(
 ///////////////////////////////////////////////////////////////////////////////////////////
 
 wartremoverErrors ++= Warts.allBut(
-  Wart.NonUnitStatements, Wart.Product, Wart.Serializable, Wart.Equals,
-  Wart.DefaultArguments, Wart.FinalCaseClass, Wart.Overloading, Wart.LeakingSealed
+  Wart.NonUnitStatements,
+  Wart.Product,
+  Wart.Serializable,
+  Wart.Equals,
+  Wart.DefaultArguments,
+  Wart.FinalCaseClass,
+  Wart.Overloading,
+  Wart.LeakingSealed,
+  Wart.PublicInference
 )
 
 wartremoverExcluded ++= Seq(
