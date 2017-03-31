@@ -7,8 +7,10 @@
 - [ ] Add isEmpty on Ship class.
 - [ ] An human has a gender.
 - [ ] An human is a member of a Corporation.
-- [ ] A ship the property of a Corporation.
-- [ ] Create a Ship builder.
+- [ ] A ship is the property of a Corporation.
+- [ ] Create a Ship builder
+  * It required a Captain to order the production.
+  * The captain will be the first member of its crew.
 
 ### Level 2
 
@@ -24,7 +26,7 @@
   * People from the station can join a ship if there is a captain inside the ship and he/she accept them.
   * A ship can have a crew while being docked on a station.
   * Only a Captain with the same corporation as the ship can join an empty Ship.
-- [ ] A ship need a captain to operate.
+- [ ] A ship need a captain to operate: ie leave or join a station.
 - [ ] A ship with a Criminal captain only accept Criminal or Outer Rim Corporation on board.
 - [ ] Compute minimum, average, maximum age on people on a station, including if they are on a ship docked.
 - [ ] If a BountyHunter join a ship, it will kill any Outcasts members except if a Criminal kill it before
