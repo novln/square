@@ -1,19 +1,27 @@
 package xyz.novln
 
+import xyz.novln.Corporation._
+
 sealed trait Corporation
 object Corporation {
-  // Mainstream Corportation
-  case object Volkov extends Corporation
-  case object DwarfStar extends Corporation
-  case object Traugot extends Corporation
-  case object Amiga extends Corporation
-  // Outer Rim Corporation
-  case object Belters extends Corporation
-  case object BountyHunter extends Corporation
-  case object Zoners extends Corporation
-  // Alien Corporation
-  case object Xenos extends Corporation
-  // Criminal Corporation
-  case object LaneHackers extends Corporation
-  case object Outcasts extends Corporation
+
+  trait MainstreamCorporation extends Corporation
+  trait OuterRimCorporation extends Corporation
+  trait AlienCorporation extends Corporation
+  trait CriminalCorporation extends Corporation
+
+  case object Volkov extends MainstreamCorporation
+  case object DwarfStar extends MainstreamCorporation
+  case object Traugot extends MainstreamCorporation
+  case object Amiga extends MainstreamCorporation
+
+  case object Belters extends OuterRimCorporation
+  case object BountyHunter extends OuterRimCorporation
+  case object Zoners extends OuterRimCorporation
+
+  case object Xenos extends AlienCorporation
+
+  case object LaneHackers extends CriminalCorporation
+  case object Outcasts extends CriminalCorporation
+
 }
