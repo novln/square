@@ -21,7 +21,10 @@ scalacOptions ++= Seq(
   "-target:jvm-1.8"
 )
 
-javaOptions += "-Duser.timezone=UTC"
+libraryDependencies ++= Seq(
+  "org.scalactic" %% "scalactic" % "3.0.1",
+  "org.scalatest" %% "scalatest" % "3.0.1" % "test"
+)
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 //                                                                                       //
@@ -48,13 +51,3 @@ wartremoverExcluded ++= Seq(
   crossTarget.value / "routes" / "main" / "router" / "Routes.scala",
   crossTarget.value / "routes" / "main" / "router" / "RoutesPrefix.scala"
 )
-
-///////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                       //
-//                                  Play configuration                                   //
-//                                                                                       //
-///////////////////////////////////////////////////////////////////////////////////////////
-
-javaOptions in Test += "-Dconfig.file=conf/application.test.conf"
-
-javaOptions in Test += "-Dlogger.file=conf/logback.test.xml"
