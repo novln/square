@@ -4,10 +4,10 @@
 
 ### Level 1
 
- [ ] - Add isEmpty on Ship class.
- [ ] - An human has a gender.
- [ ] - An human is a member of a Corporation.
- [ ] - Two human can clone an Human.
+- [ ] Add isEmpty on Ship class.
+- [ ] An human has a gender.
+- [ ] An human is a member of a Corporation.
+- [ ] Two human can clone an Human.
    * A Xenos require two Xenos.
    * A Xenos cannot clone with another Corporation.
    * A Xenos can clone with itself.
@@ -17,5 +17,5 @@
  
 ### Level 2
 
- [ ] - Add Earth & Mars planet.
- [ ] - Ship from Xenos cannot dock on station.
+- [ ] Add Earth & Mars planet.
+- [ ] Ship from Xenos cannot dock on station.
